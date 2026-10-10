@@ -1,0 +1,7 @@
+{
+ "effort": "max",
+ "extraction_notes": [
+  "babel script block from html fence -> main.tsx"
+ ],
+ "code_chars": 21528
+}

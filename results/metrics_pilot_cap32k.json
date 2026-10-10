@@ -1,0 +1,15 @@
+[
+  {
+    "effort": "low",
+    "transport": "stream",
+    "time": 2217.7,
+    "ttft": 0.026,
+    "first_reasoning": 1.362,
+    "first_content": 1949.513,
+    "reasoning_tok": 25006,
+    "completion_tok": 32768,
+    "prompt_tok": 38,
+    "content_len": 21429,
+    "reasoning_len": 53730
+  }
+]

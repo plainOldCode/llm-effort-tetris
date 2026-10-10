@@ -1,0 +1,9 @@
+{
+ "effort": "low",
+ "tsc_exit": 2,
+ "tsc_errors": 6,
+ "vite_exit": 0,
+ "notes": [
+  "babel script block from html fence -> main.tsx"
+ ]
+}
