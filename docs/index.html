@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>LLM Effort 비교 — tetris (React+TS)</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", sans-serif; max-width: 640px; margin: 3rem auto; padding: 0 1.5rem; color: #222; }
+  h1 { font-size: 1.5rem; } .sub { color: #666; }
+  a.demo { display: block; padding: 0.9rem 1.2rem; margin: 0.6rem 0; border: 1px solid #ddd; border-radius: 8px; text-decoration: none; color: #111; font-weight: 600; }
+  a.demo:hover { border-color: #888; }
+  a.demo small { font-weight: 400; color: #666; display: block; margin-top: 0.25rem; }
+  code { background: #f2f2f2; padding: 0.1em 0.35em; border-radius: 4px; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<h1>LLM Effort 비교 실험 — tetris (React + TypeScript)</h1>
+<p class="sub">동일 프롬프트 · 동일 모델 · reasoning effort low/high/max · 조건당 n=1 (2026-10-10)</p>
+<p>원본 프롬프트: <code>tetris game 을 html 로 구성하고 react 를 이용하고 typescript 를 사용해라.</code></p>
+<p>요약: 3조건 모두 기능 9/9·빌드 통과. tsc 에러는 <strong>high 3 &lt; low 6 &lt; max 19</strong>, 추론 토큰 증가는 <strong>max에서만</strong> (25,006 ≈ 24,827 &lt;&lt; 39,860).</p>
+<a class="demo" href="./low/">low 데모 <small>tsc 에러 6 · 618줄 · 총 2,356.7초</small></a>
+<a class="demo" href="./high/">high 데모 <small>tsc 에러 3 (최소) · useReducer 상태 머신 · 총 2,530.4초</small></a>
+<a class="demo" href="./max/">max 데모 <small>tsc 에러 19 (TS2345 집중) · 총 2,965.2초</small></a>
+<p class="sub">상세: <a href="https://github.com/plainOldCode/llm-effort-tetris">GitHub 레포</a> (README KO/EN, 원시 응답, 메트릭 JSON)</p>
+</body>
+</html>
